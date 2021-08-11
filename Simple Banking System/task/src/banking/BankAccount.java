@@ -24,6 +24,12 @@ public class BankAccount {
         System.out.println();
     }
 
+    public BankAccount(long accountNumber, String PIN, long balance) {
+        this.accountNumber = accountNumber;
+        this.PIN = PIN;
+        this.balance = balance;
+    }
+
     public int getId() {
         return id;
     }
@@ -38,6 +44,10 @@ public class BankAccount {
 
     public long getBalance() {
         return balance;
+    }
+
+    public void setBalance(long income) {
+        this.balance += income;
     }
 
     /**
